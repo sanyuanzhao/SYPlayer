@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/url_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/url_edit_height"
+        android:layout_margin="20dp"
+        android:singleLine="true"
+        android:background="@drawable/edittext_style_selector"/>
+
+    <EditText
+        android:id="@+id/dest_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/url_edit_height"
+        android:layout_below="@id/url_edit"
+        android:layout_margin="20dp"
+        android:singleLine="true"
+        android:background="@drawable/edittext_style_selector"/>
+    <Button
+        android:id="@+id/stop_btn"
+        android:layout_below ="@id/dest_edit"
+        android:layout_alignRight="@id/dest_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:text="结束"
+        android:textSize ="17sp"
+        android:textColor="@drawable/btn_text_color_selector"
+        android:background="@drawable/button_style"/>
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_toLeftOf="@id/stop_btn"
+        android:layout_alignTop="@id/stop_btn"
+        android:layout_alignBottom="@id/stop_btn"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textSize ="17sp"
+        android:text="开始"
+        android:textColor="@drawable/btn_text_color_selector"
+        android:background="@drawable/button_style"/>
+    <EditText
+        android:id="@+id/msg_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/start_btn"
+        android:layout_alignLeft="@id/url_edit"
+        android:layout_alignRight="@id/url_edit"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:gravity="top|left"
+        android:background="@drawable/edittext_style_selector"/>
+</RelativeLayout>
